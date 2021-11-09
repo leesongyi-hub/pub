@@ -6031,17 +6031,3 @@ body.focus .footer {
 .reporting .list_ft .paging{padding:0;}
 
 /*주차별 의견*/
-.reporting .community .wirte_area textarea{width:100%;margin-top:4.4444vw;padding:2.2222vw;min-height:50.0000vw;max-height:auto;font-size:3.8889vw;border:1px solid #d4d4d4;}
-.reporting .community .wirte_area span{display:block;text-align:right;color:#777;}
-.reporting .community .wirte_area .btn_zone{text-align:center;}
-.reporting .community .wirte_area button{display:inline-block;padding:0 6.6667vw;height:11.1111vw;margin-top:2.2222vw;background:#48b9e1;font-weight:500;color:#fff;font-size:4.1667vw;}
-.reporting .comment_area{position:relative;margin-top:6.6667vw;}
-.reporting .comment_area .list_hd{margin-bottom:4.4444vw;}
-.reporting .comment_area .filter_wrap{position:absolute;top:-2.2222vw;right:0;}
-.reporting .comment_area .tit_box{position:relative;padding-bottom:2.2222vw;margin-bottom:2.2222vw;border-bottom:1px solid #dee2e6;}
-.reporting .comment_area .tit_box .btn_delete{position:absolute;top:-2.2222vw;right:-2.2222vw;display:block;width:10.0000vw;height:10.0000vw;background:url(../images/icon/ico_delete.svg) no-repeat center;background-size:4.4444vw;text-indent:-9999px;}
-.reporting .comment_area .tit_box p{font-size:4.1667vw;font-weight:500;}
-.reporting .comment_area .tit_box .date{font-size:3.3333vw;color:#777;}
-.reporting .comment_area .comment{padding:2.2222vw;border:1px solid #d4d4d4;}
-.reporting .comment_area .comment .con{font-size:3.8889vw;}
-.reporting .comment_area .no_commnet{padding:6.6667vw 0;font-size:3.8889vw;font-family: "Gong Gothic";color:#999;text-align:center;}
