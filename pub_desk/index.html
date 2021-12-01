@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>D-ESK</title> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">       
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/base.css"> 
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body>
+    <div class="wrap">
+        <div w3-include-html="header.html"></div>
+
+        <div class="con_search box_d2">
+            <div class="in1280">
+                <div class="area_search">
+                    <input type="text" placeholder="검색어를 입력해주세요" /><button type="submit" class="btn_submit"><span class="blind">통합검색</span></button>
+                </div>            
+            </div>
+        </div>
+        <!--//con_search-->
+        
+        <div class="container">
+            <div class="inner in1280">
+                <div style="font-size:100px">
+                    가나다라마바사<br />
+                    가나다라마바사<br />
+                    가나다라마바사<br />
+                    가나다라마바사<br />
+                    가나다라마바사<br />
+                    가나다라마바사<br />
+                    가나다라마바사<br />
+                    가나다라마바사<br />
+                </div>
+            </div>
+        </div>
+        <div class="allMenu">
+            <div class="allMenu_con">
+                <div class="allMenu_header">
+                    <h3>전체메뉴</h3>
+                    <button type="button" class="btn_close" onclick="leftMenuClose('.allMenu')"><spna class="blind">닫기</spna></button>
+                </div>
+                <ul class="allMenu_gnb">
+                    <li>
+                        <a href="javascript:;" class="d1">대시보드</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="d1">I@D-ESK</a>
+                        <ul class="d2 clearfix">
+                            <li><a href="javascript:;">대시보드</a></li>
+                            <li><a href="javascript:;">나의 교과목</a></li>
+                            <li><a href="javascript:;">교과목 설계</a></li>
+                            <li><a href="javascript:;">DaQ</a></li>
+                            <li><a href="javascript:;">연구 지원</a></li>
+                            <li><a href="javascript:;">스크랩</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="d1">학과 라운지</a>
+                        <ul class="d2 clearfix">
+                            <li><a href="javascript:;">학과 정보</a></li>
+                            <li><a href="javascript:;">졸업 현황</a></li>
+                            <li><a href="javascript:;">토픽 정보</a></li>
+                            <li><a href="javascript:;">비교과</a></li>
+                            <li><a href="javascript:;">교재/참고자료</a></li>
+                            <li><a href="javascript:;">취업 분석</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="d1">교내 정보</a>
+                        <ul class="d2 clearfix">
+                            <li><a href="javascript:;">교과</a></li>
+                            <li><a href="javascript:;">비교과</a></li>
+                            <li><a href="javascript:;">역량</a></li>
+                            <li><a href="javascript:;">수강이력</a></li>
+                            <li><a href="javascript:;">취업 분석</a></li>
+                            <li><a href="javascript:;">채용 분석</a></li>
+                            <li><a href="javascript:;">학내 게시판 분석</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="d1">교외 정보</a>
+                        <ul class="d2 clearfix">
+                            <li><a href="javascript:;">채용분석</a></li>
+                            <li><a href="javascript:;">무료 강의 분석</a></li>
+                            <li><a href="javascript:;">엑소브레인 QA</a></li>
+                            <li><a href="javascript:;">연구분석 (RISS)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="d1">통계현황</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="d1">단아이 챗봇</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="d1">D-GUIDE</a>
+                    </li>
+                </ul>
+                <div class="logOut">
+                    <button type="button">로그아웃</button>
+                </div>
+                <!--logOut-->
+            </div>
+        </div>
+        <!--//allMenu-->
+        <footer>
+            <div class="in1280">
+                <div class="info_box">
+                    <a href="javascript:;" class="logo"><img src="images/icon/logo_footer.svg" alt="단국대학교" /></a>
+                    <p class="t_center">미래교육혁신원  EduAI센터</p>
+                    <p class="t_center_en">Innovation Institute for Future Education EduAI Center</p>
+                    <address class="">우)16890 죽전캠퍼스 경기도 용인시 수지구 죽전로 152 범정관 117-1호 EduAI 센터</address>
+                    <p class="copyright">Copyright© BY DANKOOK UNIVERSITY. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--//wrap-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function(){ 
+            includeHTML();
+
+            $("#header").load("header.html");
+            //$("#footer").load("common/footer.html");
+
+
+            //gnb 2depth 노출
+            $('.depth1 .link').hover(function(){
+                $(this).addClass('on');
+            }, function() {
+                $(this).removeClass('on');               
+               }
+            );
+
+            //통합검색 열기
+            $('.quick_icon .search').on('click', function(){
+                $('.con_search').addClass('on');
+            });
+            
+            $(document).mouseup(function (e){
+                //통합검색 닫기
+                var con_search = $(".con_search");
+                if(con_search.has(e.target).length === 0){
+                    con_search.removeClass('on');
+                }
+
+                //헤더모달 Active Style
+                var hd_modal = $(".header_modal");
+                if(hd_modal.has(e.target).length === 0){
+                    hd_modal.removeClass('on');
+                }
+                $('.quick_icon .i .btn').removeClass('on');
+            });
+            
+            //헤더모달팝업 Active Style
+            $('.quick_icon .i .btn').on('click', function(){                
+                $(this).addClass('on');
+            });
+
+        });
+
+        //헤더모달팝업 열기
+        function hd_layerPop(target){  
+            $('.'+target).addClass('on');
+        };
+
+
+        function lock_touch(e){
+            e.preventDefault();
+        }
+
+        //전체메뉴 열기
+        var $winW = $(window).width();
+        var $winH = $(window).height();
+        function leftMenu(target){
+            $('body').css('overflow', 'hidden');
+            $('body').on('scroll touchmove mousewheel', function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            });
+            $(target).addClass('on')
+            $('html').css({'overflow' : 'hidden','height' : $winH});
+            $("<div class='overlay'></div>").appendTo('.wrap');
+            return false;
+        };   
+        
+        //전체메뉴 닫기
+        function leftMenuClose(target){
+            $('body').css('overflow', 'visible');
+            $('body').off('scroll touchmove mousewheel');            
+            if (document.removeEventListener) {
+                document.removeEventListener('touchmove', lock_touch);
+            }
+            else {
+                document.detachEvent('touchmove', lock_touch);
+            }            
+            $(target).removeClass('on')
+            $(".overlay").remove();
+            $('html').css({'overflow' : 'auto','height' : 'auto'});
+            $('html, body').scrollTop($(window).scrollTop());
+        };
+
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                /* Make an HTTP request using the attribute value as the file name: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                    /* Remove the attribute, and call this function once more: */
+                    elmnt.removeAttribute("w3-include-html");
+                    includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Exit the function: */
+                return;
+                }
+            }
+            }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
